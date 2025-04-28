@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskruti Dairy Farm - Gaushala</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --secondary: #4caf50;
+            --accent: #8bc34a;
+            --light: #f1f8e9;
+        }
+
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1500595046743-cd271d694d30');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .about-section {
+            background-color: var(--light);
+            padding: 80px 0;
+        }
+
+        .product-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .stats-section {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                        url('https://images.unsplash.com/photo-1516267126297-6c71c41cdfb4');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .footer {
+            background-color: var(--primary);
+            color: white;
+            padding: 60px 0 30px;
+        }
+
+        .footer-heading {
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+
+        .btn-custom {
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sanskruti Dairy Farm</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1 class="display-4">Welcome to Sanskruti Dairy Farm</h1>
+                    <p class="lead">Pure and Natural Dairy Products from Our Gaushala</p>
+                    <a href="#products" class="btn btn-custom">Explore Products</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>About Our Gaushala</h2>
+                    <p>At Sanskruti Dairy Farm, we believe in maintaining the highest standards of cow care and dairy production. Our Gaushala is home to indigenous cow breeds that are treated with love and respect.</p>
+                    <p>We follow traditional and modern practices to ensure the quality of our products while maintaining the well-being of our cows.</p>
+                    <a href="#contact" class="btn btn-custom">Learn More</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1527153857715-3908f2bae5e8" class="img-fluid rounded" alt="Gaushala">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5" id="products">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Products</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150" 
+                             class="product-image w-100" 
+                             alt="Milk"
+                             style="object-fit: cover; height: 500px;">
+                        <div class="card-body">
+                            <h4>Pure Cow Milk</h4>
+                            <p>Fresh and nutritious milk from indigenous cows</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <img src="ghee.jpg" 
+                             class="product-image w-100" 
+                             alt="Organic Ghee"
+                             style="object-fit: cover; height: 500px;">
+                        <div class="card-body">
+                            <h4>Organic Desi Ghee</h4>
+                            <p>Traditional pure cow ghee made with care - ₹2000/liter</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div>Happy Cows</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div>Daily Customers</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div>Products</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div>Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-heading">About Us</h4>
+                    <p>Sanskruti Dairy Farm is committed to providing pure and natural dairy products while maintaining the highest standards of cow care.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <p>
+                        Sanskruti Dairy Farm<br>
+                        123 Rural Area, Village Name<br>
+                        District, State - PIN<br>
+                        Phone: +91 1234567890<br>
+                        Email: info@sanskrutidairy.com
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-heading">Opening Hours</h4>
+                    <p>
+                        Monday - Saturday<br>
+                        6:00 AM - 8:00 PM<br><br>
+                        Sunday<br>
+                        6:00 AM - 12:00 PM
+                    </p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p>&copy; 2024 Sanskruti Dairy Farm. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
